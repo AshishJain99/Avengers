@@ -2,7 +2,7 @@
 //  DetailedViewController.swift
 //  Avengers
 //
-//  Created by sixpep on 05/02/23.
+//  Created by Ash on 05/02/23.
 //
 
 import UIKit

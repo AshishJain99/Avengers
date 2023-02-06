@@ -2,12 +2,12 @@
 //  model.swift
 //  Avengers
 //
-//  Created by sixpep on 04/02/23.
+//  Created by Ash on 04/02/23.
 //
 
 import Foundation
 
-// MARK: - WelcomeElement
+// MARK: - Model
 struct jsonStruct: Codable {
     let name, realname, team, firstappearance: String?
     let createdby, publisher: String?
@@ -15,4 +15,3 @@ struct jsonStruct: Codable {
     let bio: String?
 }
 
-//typealias Welcome = [WelcomeElement]

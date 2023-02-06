@@ -2,14 +2,15 @@
 //  data.swift
 //  Avengers
 //
-//  Created by sixpep on 05/02/23.
+//  Created by Ash on 05/02/23.
 //
 
 import Foundation
 
 class DataProcessing{
-    weak var delegate: DataDelegate?
     
+    //protocol initialisation
+    weak var delegate: DataDelegate?
     var jsonData = [jsonStruct]()
     
     func setData(url:String){
@@ -17,6 +18,7 @@ class DataProcessing{
         let url = URL(string:urlString)
         guard url != nil else{
             return  }
+        // Data processing from URL
             let session = URLSession.shared
             let dataTask = session.dataTask(with: url!) { (data, respponse, error) in
                 

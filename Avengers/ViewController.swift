@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Avengers
 //
-//  Created by sixpep on 03/02/23.
+//  Created by Ash on 03/02/23.
 //
 
 import UIKit
@@ -20,17 +20,18 @@ class ViewController: UIViewController,DataDelegate {
         super.viewDidLoad()
          getData()
     }
-
+//Sendind Url to Data Processing class
     func getData(){
         data.delegate = self
         data.setData(url:"https://simplifiedcoding.net/demos/marvel/")
     }
+
+// Receving data using protocol
     func didReceiveData(data: [jsonStruct]) {
             self.tableDataArray = data
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
-            
         }
 }
 
